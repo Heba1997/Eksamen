@@ -20,4 +20,15 @@ https://www.youtube.com/watch?v=kUMe1FH4CHE&t=7s
 Bøker:
 Nordengen, Jostein. Hornnes,Eva M. Nätt,Tom Heine Nätt. (2007). Webutvikling. Dataservice.net.
 
+Bilde:
+
+https://placehold.co/400x400
+
+-->
+
+<!--
+
+Minstekrav (karakter E)
+
+
 -->
