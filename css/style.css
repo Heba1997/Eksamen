@@ -2,13 +2,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #grid-container{
-    display: grid;
     grid-template-areas: "header" "main" "footer";
     
 }
 
 header, main, footer{
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 header{
@@ -23,31 +27,61 @@ header nav{
     position: relative;
 }
 
-logo-image{
-    height: auto;
-    width: auto;
-    max-width: 72px;
-    max-width: 250px;
-}
-
 head nav div{
     display: flex;
     gap: 1rem;
 }
 
-#logo{
-    text-decoration: none;
+nav{
+    align-items: center;
 }
 
 .navbar{
     display: none;
 }
 
+.btn-contact{
+    background-color: #e6bd43;
+    color: #000;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.yellow-btn{
+    background-color: #e6bd43;
+    color: #000;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign-btn{
+    background-color: #e6bd43;
+    color: #000;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hvite-btn{
+    background-color: #fff;
+    border-width: thick;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 .responsive{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #242424;
     margin: 0;
     padding: 0;
     top: 40px;
@@ -62,38 +96,118 @@ head nav div{
     text-decoration: none;
 }
 
-.black-btn{
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    background-color: #171717;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 400;
-}
-
 main{
     grid-area: main;
-}
-
-main section img{
+    vertical-align: middle;
+    text-align: center;
     width: 100%;
 }
+
+#main2{
+    display: grid;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+main section {
+    text-align: center;
+    display: table;
+    background-size: cover;
+}
+
+#headline{
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+    background-color: #D3D3D3;
+}
+
+#subheadline{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
 footer{
     grid-area: footer;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    background-color: #252525;
+    color: #fff;
+}
+
+#footer h2{
+    align-items: center;
 }
 
 #services{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #efefef;
-    padding: 1rem 0;
+    padding: 5rem;
     justify-content: space-around;
 }
 
+
 #services h2{
     width: 100%;
+    text-align: center;
+}
+
+#headline h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#headline{
+    font-size: larger;
+    text-align: center;
+}
+
+#company{
+    text-align: center;
+    padding: 100px;
+    background-color: #fff;
+    border: #000;
+}
+
+#clients{
+    display: flexbox;
+    text-align: center;
+    padding: 100px;
+    background-color: #e6bd43;
+    border: #000;
+    width: 100%;
+}
+
+#Folio{
+    text-align: center;
+    padding: 100px;
+    background-color: #fff;
+    border: #000;
+    font-weight: 400
+}
+
+.google-map{
+    padding-bottom: 50%;
+    width: 100%;
+}
+
+.google-map iframe{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+
+#newsletter{
+    text-align: center;
+    padding: 60px;
+    width: 100%;
+    background-color: #D3D3D3;
 }
 
 #services article{
@@ -102,36 +216,17 @@ footer{
     min-width: 200px;
 }
 
+
+
+
 @media only screen and (min-width:600px) {
-    #grid-container{
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
-    }
+
     .navbar{
         display: flex;
         flex-direction: row;
         gap: 1rem;
         list-style: none;
         margin: 0;
-    }
-
-    .flex-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .flex-section img{
-        width: 50%;
-    }
-
-    .flex-section section{
-        padding: 1rem;
-        width: 40%;
-        align-self: center;
-    }
-
-    .right img{
-        order: 1;
     }
 
 }

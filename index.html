@@ -8,77 +8,86 @@
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Bolleoppskrifter</title>
+        <title>Eksamen</title>
     </head>
     <body>
         <div id="grid-container">
         <header>
-            <nav>
-                <div class="logo-image"><img src="img/logo1.png" class="img-fluid">
-                </div>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="#contract">Contact</a></li>
+            <nav class="navbar navbar-light" style="background-color: #fff; float: left;">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo1.png" width="60" height="60" alt="logo">
+                </a>
+                <ul class="navbar-right ml-auto" style="float: right;">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <button type="button" class="btn btn-contact">Contract</button>
                 </ul>
             </nav>
-
-            <section>
-                <h1>Bolleoppskrifter</h1>
-                <a href="#" class="black-btn">Read more</a>
-            </section>
         </header>
         <main>
-              <!--Seksjon 1-->
-            <section class="flex-section">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                <section>
-                    <h2>Lorem ipsum</h2>
+            <div id="main">
+            <!--Seksjon 1-->
+                <section id="headline">
+                    <h1>Compeling headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button type="button" class="btn yellow-btn">Read more about our services</a>
+               </section>
+            <!--Seksjon 2-->
+               <section id="subheadline"style="float: center; border: 3px;">
+                    <h2>Enganging subheading. What can you help your visitors with</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </section>
-             </section>
-             <!--Seksjon 2-->
-             <section class="flex-section right">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                <section>
-                    <h2>Lorem ipsum</h2>
+               </section>
+            <!--Seksjon 3-->
+               <section id="company">
+                    <img src="https://placehold.co/400x400" alt="Grå placeholder bilde">
+                    <h2>About our company</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <button type="button" class="btn hvite-btn">Read more about us</a>
+               </section>
+              <!--Seksjon 4-->
+               <section id="services" style="float: center; border: 1px;">
+                    <h2>Our services</h2>
+                    <article>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    </article>
+                    <article>
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <h3>Support</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </article>
                 </section>
-            </section>
-              <!--Seksjon 3-->
-            <section id="services">
-                <h2>Services</h2>
-                <article>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                </article>
-                <article>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-                <article>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-            </section>
+            <!--Seksjon 5-->
+                <section id="newsletter">
+                    <h2>Sign up for our newsletter</h2>
+                    <button type="button" class="btn sign-btn">Sign up</button>
+                    <input type="textbox" style="height: 55px;border: none;">
+                </section>
+            </div>
         </main>
         <footer>
-
+            <div id="footer">
+                <ul>
+                    <img class="logo1" src="img/logo1.png">
+                </ul>
+                <h2>Company copyright 2023</h2>
+                <ul class="sosials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i> 
+                </ul>
+            </div>
         </footer>
         </div>
         <script>
-
-            let x = document.querySelector(".navbar")
-            
-            document.getElementById("ham").addEventListener("click", (e) =>{
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "navbar"
-                }
-            })
-
         </script>
     </body>
 </html>
